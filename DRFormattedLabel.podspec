@@ -9,11 +9,11 @@ Pod::Spec.new do |s|
                     Useful for displaying numbers on a screen with a constant title
                    DESC
 
-  s.homepage     = "http://github.com/danramteke/DRFormattedLabel"
+  s.homepage     = "https://github.com/danramteke/DRFormattedLabel"
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.author       = { "Daniel R" => "danramteke@gmail.com" }
   s.platform     = :ios
-  s.source       = { :git => "http://github.com/danramteke/DRFormattedLabel.git", :tag => "v#{s.version.to_s}" }
+  s.source       = { :git => "https://github.com/danramteke/DRFormattedLabel.git", :tag => "v#{s.version.to_s}" }
   s.source_files  = 'DRFormattedLabel', 'DRFormattedLabel/**/*.{h,m}'
   s.public_header_files = 'DRFormattedLabel/**/*.h'
   s.requires_arc = true
