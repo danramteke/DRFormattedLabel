@@ -19,6 +19,10 @@
 		21B8103D181DACEF00673C31 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21B81025181DACEE00673C31 /* UIKit.framework */; };
 		21B81045181DACEF00673C31 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 21B81043181DACEF00673C31 /* InfoPlist.strings */; };
 		21B81047181DACEF00673C31 /* DRFormattedLabelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B81046181DACEF00673C31 /* DRFormattedLabelTests.m */; };
+		21B81052181DAD3D00673C31 /* DRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B81051181DAD3D00673C31 /* DRViewController.m */; };
+		21B81053181DAD3D00673C31 /* DRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B81051181DAD3D00673C31 /* DRViewController.m */; };
+		21B81056181DB67B00673C31 /* DRFormattedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B81055181DB67B00673C31 /* DRFormattedLabel.m */; };
+		21B81057181DB67B00673C31 /* DRFormattedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B81055181DB67B00673C31 /* DRFormattedLabel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +52,10 @@
 		21B81042181DACEF00673C31 /* DRFormattedLabelTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DRFormattedLabelTests-Info.plist"; sourceTree = "<group>"; };
 		21B81044181DACEF00673C31 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		21B81046181DACEF00673C31 /* DRFormattedLabelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DRFormattedLabelTests.m; sourceTree = "<group>"; };
+		21B81050181DAD3D00673C31 /* DRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRViewController.h; sourceTree = "<group>"; };
+		21B81051181DAD3D00673C31 /* DRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRViewController.m; sourceTree = "<group>"; };
+		21B81054181DB67B00673C31 /* DRFormattedLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DRFormattedLabel.h; path = DRFormattedLabel/DRFormattedLabel/DRFormattedLabel.h; sourceTree = "<group>"; };
+		21B81055181DB67B00673C31 /* DRFormattedLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DRFormattedLabel.m; path = DRFormattedLabel/DRFormattedLabel/DRFormattedLabel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +85,8 @@
 		21B81015181DACEE00673C31 = {
 			isa = PBXGroup;
 			children = (
+				21B81054181DB67B00673C31 /* DRFormattedLabel.h */,
+				21B81055181DB67B00673C31 /* DRFormattedLabel.m */,
 				21B81027181DACEE00673C31 /* DRFormattedLabel */,
 				21B81040181DACEF00673C31 /* DRFormattedLabelTests */,
 				21B81020181DACEE00673C31 /* Frameworks */,
@@ -111,6 +121,8 @@
 				21B81031181DACEE00673C31 /* DRAppDelegate.m */,
 				21B81033181DACEE00673C31 /* Images.xcassets */,
 				21B81028181DACEE00673C31 /* Supporting Files */,
+				21B81050181DAD3D00673C31 /* DRViewController.h */,
+				21B81051181DAD3D00673C31 /* DRViewController.m */,
 			);
 			path = DRFormattedLabel;
 			sourceTree = "<group>";
@@ -241,6 +253,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				21B81032181DACEE00673C31 /* DRAppDelegate.m in Sources */,
+				21B81056181DB67B00673C31 /* DRFormattedLabel.m in Sources */,
+				21B81052181DAD3D00673C31 /* DRViewController.m in Sources */,
 				21B8102E181DACEE00673C31 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,6 +263,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21B81057181DB67B00673C31 /* DRFormattedLabel.m in Sources */,
+				21B81053181DAD3D00673C31 /* DRViewController.m in Sources */,
 				21B81047181DACEF00673C31 /* DRFormattedLabelTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

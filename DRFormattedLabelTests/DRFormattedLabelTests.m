@@ -7,9 +7,10 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "DRFormattedLabel.h"
 
 @interface DRFormattedLabelTests : XCTestCase
-
+@property DRFormattedLabel* label;
 @end
 
 @implementation DRFormattedLabelTests
@@ -17,18 +18,27 @@
 - (void)setUp
 {
     [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
+    self.label = [[DRFormattedLabel alloc] initWithFormat:@"Cattle count: %@" defaultValue:@"--"];
 }
 
 - (void)tearDown
 {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
+    self.label = nil;
     [super tearDown];
 }
 
-- (void)testExample
-{
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+- (void)testInitialValue {
+    XCTAssertEqualObjects(self.label.text, @"Cattle count: --");
+}
+
+- (void)testSetValue {
+    self.label.value = @4;
+    XCTAssertEqualObjects(self.label.text, @"Cattle count: 4");
+}
+
+- (void)testClearsValue {
+    [self.label clear];
+    XCTAssertEqualObjects(self.label.text, @"Cattle count: --");
 }
 
 @end
