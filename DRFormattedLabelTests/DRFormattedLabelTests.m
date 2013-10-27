@@ -41,4 +41,10 @@
     XCTAssertEqualObjects(self.label.text, @"Cattle count: --");
 }
 
+- (void)testSetFormat {
+    self.label.value = @3;
+    self.label.format = @"Airplanes: %@";
+    XCTAssertEqualObjects(self.label.text, @"Airplanes: 3");
+}
+
 @end

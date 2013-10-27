@@ -39,6 +39,11 @@
     [self updateText];
 }
 
+-(void)setFormat:(NSString *)newFormat {
+    _format = newFormat;
+    [self updateText];
+}
+
 -(void)updateText {
     if (_value == nil)
         self.text = [NSString stringWithFormat:_format, _defaultValue];
