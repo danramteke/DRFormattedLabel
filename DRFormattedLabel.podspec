@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.author       = { "Daniel R" => "danramteke@gmail.com" }
   s.platform     = :ios
   s.source       = { :git => "https://github.com/danramteke/DRFormattedLabel.git", :tag => "v#{s.version.to_s}" }
-  s.source_files  = 'DRFormattedLabel', 'DRFormattedLabel/**/*.{h,m}'
+  s.source_files  = 'DRFormattedLabel/DRFormattedLabel/DRFormattedLabel.{h,m}'
   s.public_header_files = 'DRFormattedLabel/**/*.h'
   s.requires_arc = true
 end
